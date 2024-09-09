@@ -1,0 +1,73 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainhome"
+    android:background="#F5F5F5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- AppBarLayout for holding the Toolbar -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbarlayout"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <!-- Toolbar inside AppBarLayout -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:menu="@menu/notelymenu"
+            android:background="#FFEB3B"
+            android:elevation="4dp"
+            android:title="Notely" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- Main content below the AppBarLayout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbarlayout"
+        android:background="#F5F5F5"
+        android:padding="5dp">
+
+        <!-- Main content area -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recyclerviewnotes"
+
+            />
+
+        <!-- Bottom area for "New Note" icon and text -->
+
+        <ImageView
+            android:id="@+id/new_note_image"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="17dp"
+            android:layout_alignParentBottom="true"
+            android:contentDescription="notesimage"
+            android:layout_alignParentEnd="true"
+            android:clickable="true"
+            android:layout_marginBottom="26dp"
+            android:src="@drawable/notesnew" />
+
+        <TextView
+            android:id="@+id/new_note_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/new_note_image"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:text="New Note"
+            android:fontFamily="sans-serif-black"
+            android:textColor="#333333"
+            android:textSize="18sp"
+             />
+
+    </RelativeLayout>
+
+</RelativeLayout>

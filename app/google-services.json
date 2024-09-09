@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "836375869209",
+    "project_id": "notes-app-ce33c",
+    "storage_bucket": "notes-app-ce33c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:836375869209:android:2adfb81deb37566240b788",
+        "android_client_info": {
+          "package_name": "com.example.notely"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhbK8x1xBKniSyGRW--qkCs_9PpeytAy0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Notely" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.Notely" parent="Base.Theme.Notely" />
+    <style name="Theme.NotesApp.Splash" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_gradient</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here -->
+        <item name="colorPrimary">#007BFF</item>
+        <item name="colorPrimaryDark">#0056b3</item>
+        <item name="colorAccent">#FFEB3B</item>
+
+        <!-- Toolbar title and subtitle text color -->
+        <item name="android:textColorPrimary">@color/your_custom_color</item> <!-- Main title color -->
+        <item name="android:textColorSecondary">@color/your_custom_color</item> <!-- Subtitle color -->
+    </style>
+</resources>

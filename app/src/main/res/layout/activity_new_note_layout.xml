@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/newnotemain"
+    android:gravity="center"
+    android:background="@drawable/splash_gradient"
+    android:orientation="vertical"
+    android:padding="25dp">
+
+    <ImageView
+        android:id="@+id/backarrow"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_gravity="top|start"
+        android:layout_marginBottom="100dp"
+        android:clickable="true"
+        android:src="@drawable/arrowback" />
+
+    <androidx.cardview.widget.CardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        app:cardCornerRadius="19dp"
+        android:background="@drawable/customedittext"
+        app:cardElevation="19dp"
+        android:backgroundTint="#F5F5F5"> <!-- Set the background color to match the previous one -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="24dp"
+            android:orientation="vertical">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                app:lottie_rawRes="@raw/lottienotes"
+                android:layout_marginBottom="20dp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter title and description of your note."
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#333333"
+                android:textAlignment="center"
+                android:layout_marginBottom="20dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="Enter a note title."
+                android:drawableStart="@drawable/notes__1___1_"
+                android:paddingStart="15dp"
+                android:textColorHint="#333333"
+                android:id="@+id/ettitle"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textColor="#333333"
+                android:background="@drawable/customedittext"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter a note description."
+                android:id="@+id/etdescription"
+                android:textStyle="bold"
+                android:drawableStart="@drawable/information"
+                android:textColorHint="#333333"
+                android:paddingStart="15dp"
+                android:layout_marginTop="15dp"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textColor="#333333"
+                android:background="@drawable/customedittext"/>
+            <TextView
+                android:id="@+id/note_timestamp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="timesstamp"
+                android:layout_marginTop="14dp"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_gravity="right"
+                android:textColor="#333333"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:text="Save"
+                android:id="@+id/btnsave"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:padding="10dp"
+                android:clickable="true"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="#FFEB3B"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

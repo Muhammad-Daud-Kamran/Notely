@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/splash_gradient"
+    android:orientation="vertical"
+    android:id="@+id/mainsplash"
+    android:gravity="center"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Splash screen content -->
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:lottie_rawRes="@raw/lottienotes"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"/>
+    <TextView
+        android:id="@+id/splash_text"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:text="Welcome to Notely"
+        android:textSize="45dp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:fontFamily="cursive"
+        />
+
+</LinearLayout>
